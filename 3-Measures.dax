@@ -1,0 +1,17 @@
+// UNEXECUTED in Power BI Desktop. Create each measure separately in table FactTickets.
+
+Tickets = COUNTROWS(FactTickets)
+
+Resolved Tickets = CALCULATE(COUNTROWS(FactTickets), FactTickets[Status] = "Resolved")
+
+Met SLA Tickets = CALCULATE(COUNTROWS(FactTickets), FactTickets[SLAMet] = 1)
+
+SLA Met % = DIVIDE([Met SLA Tickets], [Resolved Tickets])
+
+Avg Resolution Hours = AVERAGE(FactTickets[ResolutionHours])
+
+Open Backlog = CALCULATE(COUNTROWS(FactTickets), FactTickets[Status] = "Open")
+
+Avg CSAT = AVERAGE(FactTickets[CSATScore])
+
+Avg CSAT Breached = CALCULATE([Avg CSAT], FactTickets[SLAMet] = 0)

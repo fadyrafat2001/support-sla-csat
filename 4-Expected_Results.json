@@ -1,0 +1,54 @@
+{
+ "raw_rows": 300,
+ "duplicate_rows_removed": 3,
+ "unique_tickets": 297,
+ "resolved": 279,
+ "met_sla": 226,
+ "sla_met_pct": 81.0,
+ "open_backlog": 18,
+ "sla_met_pct_if_duplicates_kept": 81.2,
+ "by_category": {
+  "Billing": {
+   "tickets": 60,
+   "resolved": 57,
+   "met": 30,
+   "sla_met_pct": 52.6
+  },
+  "Bug Report": {
+   "tickets": 65,
+   "resolved": 60,
+   "met": 48,
+   "sla_met_pct": 80.0
+  },
+  "Data Export": {
+   "tickets": 4,
+   "resolved": 0,
+   "met": 0,
+   "sla_met_pct": null
+  },
+  "Feature Request": {
+   "tickets": 38,
+   "resolved": 36,
+   "met": 33,
+   "sla_met_pct": 91.7
+  },
+  "How-To": {
+   "tickets": 60,
+   "resolved": 59,
+   "met": 55,
+   "sla_met_pct": 93.2
+  },
+  "Login/Access": {
+   "tickets": 70,
+   "resolved": 67,
+   "met": 60,
+   "sla_met_pct": 89.6
+  }
+ },
+ "csat_zero_sentinels_in_raw": 12,
+ "valid_csat_scores": 207,
+ "avg_csat_met": 4.28,
+ "avg_csat_breached": 1.97,
+ "avg_csat_if_zero_kept": 3.63,
+ "avg_csat_clean": 3.85
+}
